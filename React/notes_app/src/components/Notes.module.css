@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    column-gap: 1%;
+    row-gap: min(2%, 15px);
+    grid-auto-flow: row;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    margin: 2% 1% 5% 1%;
+  }
+  
+  @media (max-width: 400px){
+    .container{
+      grid-template-columns: 32% 32% 32%;
+    }
+  }
+  
+  .card{
+    border-radius: 0px 5px 0px 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    cursor: pointer;
+    transition:  300ms;
+    user-select: none;
+  }
+  
+  .card:hover{
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  hr.solid{
+    border-top: 1px solid #63636302;
+    width: 75%;
+  }

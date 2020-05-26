@@ -1,0 +1,48 @@
+.Note{
+    display: flex;
+    flex-direction: column;
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15%;
+    transition: all 0.3s ease-out;
+    width: 75vw;
+}
+
+input{
+    font-size: 32pt;
+}
+
+textarea{
+    font-size: 24pt;
+    resize: none;
+}
+
+button{
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    border: none;
+    font-size: 24pt;
+}
+
+.accept{
+    background-color: rgb(113, 190, 113);
+    color: white;
+    cursor: pointer;
+}
+
+.accept:hover{
+    background-color: rgb(76, 141, 76);
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: rgb(167, 20, 20);
+}
