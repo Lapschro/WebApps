@@ -30,7 +30,7 @@ class Note extends Component {
 
     render() {
         return (
-            <div className={classes.Note} style={{transform: this.props.show ? 'translateY(0)' : 'translateY(-100vh)'}}>
+            <div className={classes.Note} style={{transform: this.props.show ? 'translateY(0)' : 'translateY(-200vh)'}}>
                 <input type="text" onChange={e => this.handleChangeTitle(e)} value={this.state.title} placeholder="Title"></input>
                 <textarea onChange={ e => this.handleChangleText(e)} value={this.state.text} placeholder="Add note text" maxLength="512" rows="10"></textarea>
                 <button className={classes.accept} disabled={this.state.title === ''} onClick={()=>{
